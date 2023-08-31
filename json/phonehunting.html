@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunting API practice</title>
+    <!-- Daisy UI And Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2 class="text-5xl text-center font-bold mt-8">Phone Hunting API</h2>
+    </header>
+    <main class="container mx-auto">
+        <!-- search filde  -->
+        <section class="text-center mt-10">
+            <input id="search-input" type="text" placeholder="search here..." class="input input-bordered w-full max-w-xs" />
+            <button onclick="searchHandle()" class="btn btn-accent">Search</button>
+        </section>
+        <section>
+            <div id="phones-container" class=" mt-10 grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 align-middle">
+                <!-- <div class="card card-compact w-96 bg-base-100 shadow-xl grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+                    <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Shoes!</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div> -->
+
+            </div>
+        </section>
+    </main>
+    <script src="./huntingphoneapi.js"></script>
+</body>
+
+</html>
