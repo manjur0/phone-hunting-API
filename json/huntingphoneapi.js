@@ -7,7 +7,13 @@ const loadPhon = async (searchText) => {
 
 function displayPhone(phones) {
   const phonesContainer = document.getElementById('phones-container');
-
+  // show all btn if there 12 protuct more then
+  const showAllButtonContainer = document.getElementById('show-btn-container');
+  if (phones.length > 12) {
+    showAllButtonContainer.classList.remove('hidden')
+  }else{
+    showAllButtonContainer.classList.add('hidden');
+  }
   phonesContainer.textContent = '';
   phones = phones.slice(0, 12);
 
